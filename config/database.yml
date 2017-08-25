@@ -1,4 +1,4 @@
-<% project_name = 'project-api-template' %>
+<% project_name = 'Asian-Nerdist-Blog' %>
 
 default: &default
   adapter: postgresql
