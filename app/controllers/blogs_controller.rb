@@ -15,6 +15,7 @@ class BlogsController < ApplicationController
 
   # POST /blogs
   def create
+    Blog.create(blog_params)
     @blog = Blog.new(blog_params)
 
     if @blog.save
@@ -26,6 +27,7 @@ class BlogsController < ApplicationController
 
   # PATCH/PUT /blogs/1
   def update
+    Blog.update(blog_params)
     if @blog.update(blog_params)
       render json: @blog
     else
@@ -46,6 +48,6 @@ class BlogsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def blog_params
-      params.require(:blog).permit(:title, :content)
+      params.require(:blog).permit(:title, :content, :user_id)
     end
 end
