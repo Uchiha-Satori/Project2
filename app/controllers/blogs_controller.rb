@@ -17,7 +17,7 @@ class BlogsController < ApplicationController
 
   # POST /blogs
   def create
-    Blog.create(blog_params)
+
     @blog = Blog.new(blog_params)
 
     if @blog.save
