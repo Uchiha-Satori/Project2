@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
 
-    render json: @blogs
+    render json: @blogs.order('updated_at DESC')
   end
 
   # GET /blogs/1
@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
 
   # PATCH/PUT /blogs/1
   def update
-    Blog.update(blog_params)
+
     if @blog.update(blog_params)
       render json: @blog
     else
