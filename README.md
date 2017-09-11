@@ -13,3 +13,5 @@ Wire Frame and ERD:
 https://imgur.com/a/az1PK
 Link to live site:
 https://uchiha-satori.github.io/Project2FrontEnd/
+Front-End Repo:
+https://github.com/Uchiha-Satori/Project2FrontEnd
